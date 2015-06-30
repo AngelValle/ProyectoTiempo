@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ProyectoWebAngel</display-name>
+  
+  <!-- INICIO -->
+  
+  <welcome-file-list>
+    <welcome-file>eltiempo.html</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Context Params -->
+  
+	<!-- 
+  <context-param>
+      <param-name>peticiones_contador</param-name>
+      <param-value>0</param-value>
+  </context-param>
+  
+  <context-param>
+      <param-name>peticiones_activas</param-name>
+      <param-value>0</param-value>
+  </context-param>
+  -->
+  
+  <!-- Configuracion Tiempo de Sesion -->
+  
+  <session-config>
+      <session-timeout>2</session-timeout>
+  </session-config>
+  
+  <!-- Servlets -->
+  
+  <servlet>
+      <servlet-name>Servlet1</servlet-name>
+      <servlet-class>servlet.ServletElTiempo</servlet-class>
+  </servlet>
+  <servlet-mapping>
+      <servlet-name>Servlet1</servlet-name>
+	  <url-pattern>/ServletElTiempo</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
