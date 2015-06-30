@@ -107,14 +107,12 @@ public class ServletElTiempo extends HttpServlet{
 		
 			else
 			{
-//				out.println("ERRORRRRR");
 				resp.sendRedirect("eltiempo.html");
 //				resp.sendRedirect("http://lmgtfy.com/?q=Soy+tonto+y+busco+tonterias#seen");
 			}
 		}
 		else
 		{
-//			out.println("ERRORRRRR");
 			resp.sendRedirect("eltiempo.html");
 //			resp.sendRedirect("http://lmgtfy.com/?q=Soy+tonto+y+busco+tonterias#seen");
 		}
