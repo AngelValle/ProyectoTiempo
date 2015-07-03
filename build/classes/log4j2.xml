@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="all">
+	<Properties>
+		<Property name="log-path">C:/logs/</Property>
+	</Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="MyFile" fileName="${log-path}/myexample.log" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss} %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="MyFile"/>
+            <AppenderRef ref="Console" />
+        </Root>
+    </Loggers>
+</Configuration>
