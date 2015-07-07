@@ -42,6 +42,8 @@ public class ServletElTiempo extends HttpServlet{
 					break;
 				case "LEGANES": comunidad = "28074";
 				break;
+				case "TORRELODONES": comunidad = "28152";
+				break;
 				}
 					
 				String s_url = "http://www.aemet.es/xml/municipios/localidad_"+comunidad+".xml";
