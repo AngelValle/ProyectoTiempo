@@ -30,7 +30,7 @@ public class ServletElTiempo extends HttpServlet{
 					
 		if(null!=req.getParameter("comunidad"))
 		{
-			if(req.getParameter("comunidad").equals("MADRID") || req.getParameter("comunidad").equals("LEGANES") || req.getParameter("comunidad").equals("PARLA"))
+			if(req.getParameter("comunidad").equals("MADRID") || req.getParameter("comunidad").equals("LEGANES") || req.getParameter("comunidad").equals("TORRELODONES"))
 			{
 				String comunidad = null;
 	
